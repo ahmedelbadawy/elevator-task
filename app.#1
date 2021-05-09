@@ -2,14 +2,13 @@
 #include "Port.h"
 // #include "Common.h"
 #include "Led.h"
-#include "buttons.h"
+#include "C8051F020.h"
 
 void Buzeer(void) interrupt 1
 {
    
-  LED_Toggle(LED_1);
-  IE1=0;
-  
+   ET1 = 0;
+   ET1 = 1;
 
 }
 
@@ -26,10 +25,10 @@ void main()
     // config cross bar
     XBR0 = 0x00;
     XBR1 = 0x016; // enable interrupt crossbar
-    XBR2 = 0x40; // Cross bar enabled , weak Pull-up enabled
+    XBR2 = 0x040; // Cross bar enabled , weak Pull-up enabled
 
-    EA = 0; //enable global interrupt
-    // EX0 = 1 ; // enable external interrupt 0
+    EA = 1 ; //enable global interrupt
+    EX0 = 1 ; // enable external interrupt 0
     EX1 = 1 ; // enable external interrupt 1
 
     CKCON |= 0x0c ; //Select the system clock
@@ -44,12 +43,11 @@ void main()
 
     TL1 = 0xfb;
     TH1 = 0xff;
-    LED_Init(LED_1,LED_OFF);
-    LED_Init(LED_2,LED_OFF);
-    EA = 1;
-	// while (1){
-    //     LED_SetState(tLED led, tLED_State state);
-	// }
+
+
+
+
+
 
 
 }
