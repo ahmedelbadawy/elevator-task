@@ -1,5 +1,5 @@
 # write the files without extension
-FILES := app Led 
+FILES := app Led buttons
 mainFile := app
 SiLabsPath = C:\SiLabs
 
