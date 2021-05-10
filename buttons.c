@@ -32,7 +32,12 @@ void Button_Init(tBUTTON BUTTON)
             break;
         case BUTTON_GUP:
             GPIO_InitPortPin(BUTTON_GUP_PORT_CR, BUTTON_GUP_PIN, GPIO_IN);
+			break;
+
+        case BUTTON_OPEN:
+            GPIO_InitPortPin(OPEN_PORT_CR, OPEN_PIN, GPIO_IN);
             break;
+
         case BUTTON_4:
             GPIO_InitPortPin(BUTTON_4_PORT_CR, BUTTON_4_PIN, GPIO_IN);
             break;
@@ -52,3 +57,4 @@ void Button_Init(tBUTTON BUTTON)
             /* Should not come here */
             break;
     }
+	}

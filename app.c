@@ -1,6 +1,5 @@
 #include "Main.h"
 #include "Port.h"
-// #include "Common.h"
 #include "Led.h"
 #include "buttons.h"
 
@@ -9,8 +8,6 @@ void Buzeer(void) interrupt 1
    
   LED_Toggle(LED_1);
   IE1=0;
-  
-
 }
 
 
@@ -28,7 +25,7 @@ void main()
     XBR1 = 0x016; // enable interrupt crossbar
     XBR2 = 0x40; // Cross bar enabled , weak Pull-up enabled
 
-    EA = 0; //enable global interrupt
+    EA = 1; //enable global interrupt
     // EX0 = 1 ; // enable external interrupt 0
     EX1 = 1 ; // enable external interrupt 1
 
@@ -46,7 +43,7 @@ void main()
     TH1 = 0xff;
     LED_Init(LED_1,LED_OFF);
     LED_Init(LED_2,LED_OFF);
-    EA = 1;
+    BUTTON_Init(BUTTON_OPEN);
 	// while (1){
     //     LED_SetState(tLED led, tLED_State state);
 	// }

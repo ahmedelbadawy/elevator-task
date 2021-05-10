@@ -11,20 +11,20 @@
 #define LED_2_PORT_DR   (GPIO_PORT3_DATA)
 #define LED_2_PORT_CR   (GPIO_PORT3_DIRECTION)
 #define LED_2_PIN       (GPIO_PIN_6)
-
+// buzzer bin
 #define BUZZER_PORT_DR (GPIO_PORT3_DATA)
 #define BUZZER_PORT_CR (GPIO_PORT3_DIRECTION)
 #define BUZZER_PIN       (GPIO_PIN_2)
-
+// open door button pin
 #define OPEN_PORT_DR (GPIO_PORT3_DATA)
 #define OPEN_PORT_CR (GPIO_PORT3_DIRECTION)
 #define OPEN_PIN       (GPIO_PIN_3)
 
-
+//motor pin
 #define MOTOR_PORT_DR (GPIO_PORT2_DATA)
 #define MOTOR_PORT_CR (GPIO_PORT2_DIRECTION)
 #define MOTOR_PIN       (GPIO_PIN_0)
-
+//buttons bins
 #define BUTTON_4DOWN_PORT_DR (GPIO_PORT0_DATA)
 #define BUTTON_4DOWN_PORT_CR (GPIO_PORT0_DIRECTION)
 #define BUTTON_4DOWN_PIN       (GPIO_PIN_0)
