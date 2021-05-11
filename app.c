@@ -15,7 +15,7 @@ void Timer_init()
 {
     TMOD = 0x01;
     TL0 = 0x00;
-    TH0 = 0x00;
+    TH0 = 0x4c;
     TR0 = 1;
 
 }
@@ -23,8 +23,12 @@ void Timer_init()
 void Led(void) interrupt 1
 	
 {   
-    Delay_MS(100);
     LED_Toggle(LED_1);
+    LED_Toggle(LED_2);
+    Delay_MS(400);
+    LED_Toggle(LED_1);
+    LED_Toggle(LED_2);
+    TR0 = 0;
 
 
 }
@@ -32,7 +36,8 @@ void Led(void) interrupt 1
 void Buzeer(void) interrupt 0
 {
    
-   Delay_MS(500);
+   TR0 = 0;
+   TR0 = 1;
    
 }
 
@@ -68,7 +73,7 @@ void main()
     // TL1 = 0xfb;
     // TH1 = 0xff;
     LED_Init(LED_1,LED_OFF);
-    LED_Init(LED_2,LED_OFF);
+    LED_Init(LED_2,LED_ON);
     BUTTON_Init(BUTTON_OPEN);
 	// while (1){
     //     LED_SetState(tLED led, tLED_State state);
