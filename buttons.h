@@ -24,6 +24,6 @@ typedef enum
 }tBUTTON;
 
 
-void BUTTON_Init(tBUTTON);
+void BUTTON_Init(tBUTTON BUTTON);
 
 #endif // __BUTTON_H__

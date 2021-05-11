@@ -1,7 +1,7 @@
 # write the files without extension
-FILES := app Led buttons
+FILES := app buttons Led
 mainFile := app
-SiLabsPath = C:\SiLabs
+SiLabsPath = D:/Programs/Windows/sPrograms/SiLabs
 
 
 space := $(null) #
