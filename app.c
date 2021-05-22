@@ -40,13 +40,16 @@ void Delay_MS(unsigned int ms)
 }
 void Timer_init()
 {
-    TMOD = 0x01;
+    TMOD = 0x11;
     TL0 = 0x00;
     TH0 = 0x00;
     TR0 = 1;
+    TL1 = 0x00;
+    TH1 = 0x00;
+    TR1 = 1;
 }
 // (void) interrupt 1
-void Check_buttons(void) interrupt 1
+void Check_buttons(void) interrupt 3
 
 {
     // LED_Toggle(LED_1);
@@ -182,9 +185,8 @@ void main()
     IT0 = 1;
     IT1 = 1;
 
-    CKCON |= 0x00; //Select the system clock
-
     ET0 = 1; //enable interrupt of timer0
+    ET1 = 1; //enable interrupt of timer1
 
     Timer_init();
     sevenSegment_write(0);
