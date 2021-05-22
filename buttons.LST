@@ -1,4 +1,4 @@
-C51 COMPILER V8.08   BUTTONS                                                               05/22/2021 12:50:04 PAGE 1   
+C51 COMPILER V8.08   BUTTONS                                                               05/22/2021 19:32:48 PAGE 1   
 
 
 C51 COMPILER V8.08, COMPILATION OF MODULE BUTTONS
@@ -62,7 +62,7 @@ line level    source
   53          //             GPIO_InitPortPin(BUTTON_G_PORT_CR, BUTTON_G_PIN, GPIO_IN);
   54          //             break;
   55          //         default:
-C51 COMPILER V8.08   BUTTONS                                                               05/22/2021 12:50:04 PAGE 2   
+C51 COMPILER V8.08   BUTTONS                                                               05/22/2021 19:32:48 PAGE 2   
 
   56          //             /* Should not come here */
   57          //             break;

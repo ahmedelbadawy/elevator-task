@@ -1,4 +1,4 @@
-C51 COMPILER V8.08   LED                                                                   05/22/2021 12:50:05 PAGE 1   
+C51 COMPILER V8.08   LED                                                                   05/22/2021 19:32:48 PAGE 1   
 
 
 C51 COMPILER V8.08, COMPILATION OF MODULE LED
@@ -62,7 +62,7 @@ line level    source
   53   2                  GPIO_WritePortPin(LED_1_PORT_DR, LED_1_PIN, state);
   54   2                  break;
   55   2              case LED_2:
-C51 COMPILER V8.08   LED                                                                   05/22/2021 12:50:05 PAGE 2   
+C51 COMPILER V8.08   LED                                                                   05/22/2021 19:32:48 PAGE 2   
 
   56   2                  GPIO_WritePortPin(LED_2_PORT_DR, LED_2_PIN, state);
   57   2                  break;

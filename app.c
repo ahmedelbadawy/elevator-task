@@ -3,7 +3,14 @@
 #include "Led.h"
 #include "buttons.h"
 #include "seven_seg.h"
+#include "Servo.h"
 #include <stdio.h>
+
+#define PWM_Period 0xB7FE
+sbit Servo_Motor_Pin = P3^4;
+float cycle[5] ={2.7 , 6.4 , 7.5 , 8.6 , 9.7} ;
+unsigned int ON_Period, OFF_Period, DutyCycle;
+
 unsigned char floors[5]={ 0,0,0,0,0};
 unsigned char up[5]={ 0,0,0,0,0};
 unsigned char down[5]={ 0,0,0,0,0};
@@ -26,6 +33,7 @@ void checkOuterButtons();
 unsigned char final_floor_up();
 unsigned char final_floor_down();
 void open_door();
+void Set_DutyCycle_To(float duty_cycle);
 
 void Delay_MS(unsigned int ms)
 {
@@ -41,8 +49,8 @@ void Delay_MS(unsigned int ms)
 void Timer_init()
 {
     TMOD = 0x11;
-    TL0 = 0x00;
-    TH0 = 0x00;
+    TH0 = (PWM_Period >> 8);/* 20ms timer value */
+	TL0 = PWM_Period;
     TR0 = 1;
     TL1 = 0x00;
     TH1 = 0x00;
@@ -58,6 +66,7 @@ void Check_buttons(void) interrupt 3
     // LED_Toggle(LED_1);
     // LED_Toggle(LED_2);
     // TR0 = 0;
+
         unsigned char i = 0;
 
 
@@ -155,11 +164,26 @@ for (i ; i <= 4; i++)
     {
         up_sum = up_sum + up[i];
         down_sum = down_sum + down[i];
-    }
-        
+    }        
 }
 
-void Buzeer(void) interrupt 0
+void Timer0_ISR(void) interrupt 1	
+{
+	Servo_Motor_Pin = !Servo_Motor_Pin;
+	if(Servo_Motor_Pin)
+	{
+		TH0 = (ON_Period >> 8);
+		TL0 = ON_Period;
+	}	
+	else
+	{
+		TH0 = (OFF_Period >> 8);
+		TL0 = OFF_Period;
+	}	
+			
+}
+
+void wait_door(void) interrupt 0
 {
 
 if(check_door)
@@ -176,7 +200,7 @@ void main()
     OSCICN = 0x014; // 2MH clock
     // config cross bar
     XBR0 = 0x00;
-    XBR1 = 0x016; // enable interrupt crossbar
+    XBR1 = 0x14; // enable interrupt crossbar
     XBR2 = 0x40;  // Cross bar enabled , weak Pull-up enabled
 
     EA = 1;  //enable global interrupt
@@ -194,6 +218,7 @@ void main()
 
     // TL1 = 0xfb;
     // TH1 = 0xff;
+    SERVO_Init();
     LED_Init(LED_1, LED_OFF);
     LED_Init(LED_2, LED_ON);
     // BUTTON_Init(BUTTON_OPEN);
@@ -273,10 +298,11 @@ void elevatorUp()
     int i = currentFloor;
     for (i ; i <= floor && (i != 5); i++)
     {
-        
+        // cycle = cycle + 2;
         // elevator up using dc motor
         moving = 1;
         sevenSegment_write(i); //print current floor on 7Seg
+        Set_DutyCycle_To(cycle[i]);
         currentFloor = i;
         Delay_MS(250);
         // bringElevator();
@@ -302,8 +328,10 @@ void elevatorDown()
     for (i; i >= floor; i--)
     {
         moving = 1;
+        // cycle = cycle - 2;
         // elevator down using dc motor
         sevenSegment_write(i); //print current floor on 7Seg
+        Set_DutyCycle_To(cycle[i]);
         currentFloor = i;
         Delay_MS(250);
         if (down[i] == 1)
@@ -358,4 +386,14 @@ void open_door()
     LED_Toggle(LED_1);
     LED_Toggle(LED_2);
     check_door = 0;
+}
+
+void Set_DutyCycle_To(float duty_cycle)
+{
+	float period = 65535 - PWM_Period;
+	ON_Period = ((period/100.0) * duty_cycle);
+	OFF_Period = (period - ON_Period);	
+	ON_Period = 65535 - ON_Period;	
+	OFF_Period = 65535 - OFF_Period;
+
 }
