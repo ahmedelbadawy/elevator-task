@@ -1,7 +1,7 @@
 # write the files without extension
-FILES := app buttons Led
+FILES := app seven_seg buttons Led
 mainFile := app
-SiLabsPath = D:/Programs/Windows/sPrograms/SiLabs
+SiLabsPath = C:\SiLabs
 
 
 space := $(null) #
@@ -22,4 +22,4 @@ link:
 	$(ld) $(OBJS) TO $(mainFile).ABS
 
 clean:
-	rm *.OBJ *.LST *.M51 *.ABS
+	del *.OBJ *.LST *.M51 *.ABS

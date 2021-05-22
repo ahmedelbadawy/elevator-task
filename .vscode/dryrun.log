@@ -1,0 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `d:/WORK/SBME/3rd Year/BioElectronics/tasks/MC_task2'
+C:\SiLabs/MCU/IDEfiles/C51/BIN/C51.exe app.c DB OE BR;  C:\SiLabs/MCU/IDEfiles/C51/BIN/C51.exe buttons.c DB OE BR;  C:\SiLabs/MCU/IDEfiles/C51/BIN/C51.exe Led.c DB OE BR;  C:\SiLabs/MCU/IDEfiles/C51/BIN/C51.exe seven_seg.c DB OE BR;
+C:\SiLabs/MCU/IDEfiles/C51/BIN/bl51.exe app.OBJ ,buttons.OBJ ,Led.OBJ ,seven_seg.OBJ TO app.ABS
+C:\SiLabs/MCU/IDEfiles/C51/BIN/oh51.exe app.ABS
+make clean
+make.exe: Leaving directory `d:/WORK/SBME/3rd Year/BioElectronics/tasks/MC_task2'
+ 

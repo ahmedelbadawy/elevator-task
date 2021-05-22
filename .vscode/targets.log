@@ -1,0 +1,367 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Sat May 15 19:10:05 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `makefile', line 3)
+mainFile := app
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := d:/WORK/SBME/3rd Year/BioElectronics/tasks/MC_task2
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\mosta\OneDrive
+# environment
+PUBLIC = C:\Users\Public
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = C:\Users\mosta\AppData\Roaming\Code\CachedData\cfa2e218100323074ac1948c885448fdf4de2a7f
+# environment
+TMP = C:\Users\mosta\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from `makefile', line 11)
+OBJS := app.OBJ ,buttons.OBJ ,Led.OBJ ,seven_seg.OBJ
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-608e36e2-2389-4b94-be2c-30760d63e494-sock
+# environment
+VSCODE_CWD = C:\Program Files\Microsoft VS Code
+# environment
+PATH = C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Platform Flash Tool Lite;C:\Users\mosta\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\mosta\AppData\Local\Programs\Python\Python37-32\;C:\Users\mosta\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2019.1.3\bin;C:\adb;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2016b\runtime\win64;C:\Program Files\MATLAB\R2016b\bin;C:\Program Files\MATLAB\R2016b\polyspace\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\glut\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Python27\Scripts;C:\Python27;D:\Programs\anaconda3\Scripts;D:\Programs\anaconda3;D:\Programs\anaconda3\Library\bin;D:\Programs\cmake-3.20.2-windows-x86_64\cmake-3.20.2-windows-x86_64\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Users\mosta\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2019.1.3\bin;C:\Users\mosta\AppData\Local\GitHubDesktop\bin;D:\Programs\flutter\bin;C:\Users\mosta\AppData\Local\Microsoft\WindowsApps;C:\Users\mosta\AppData\Local\Programs\Microsoft VS Code\bin;C:\flutter\bin;C:\Users\mosta\AppData\Roaming\npm;D:\Programs\anaconda3;D:\Programs\anaconda3\Scripts;D:\Programs\anaconda3\Library\bin;
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+# makefile (from `makefile', line 7)
+space := $(subst ,, )
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132647817250570293
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\mosta
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# makefile (from `makefile', line 8)
+comma := ,
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 6
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2032_CVBIFEDLCVHICRIU
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = MOSTAFAABBAS
+# environment
+GOOGLE_API_KEY = no
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = mostafa abbas
+# environment
+KMP_DUPLICATE_LIB_OK = TRUE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+GOOGLE_DEFAULT_CLIENT_ID = no
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\MOSTAFAABBAS
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = MOSTAFAABBAS
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `makefile', line 9)
+SRCS := app.c buttons.c Led.c seven_seg.c
+# makefile (from `makefile', line 12)
+CC := C:\SiLabs/MCU/IDEfiles/C51/BIN/C51.exe
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := default
+# makefile (from `makefile', line 10)
+OBJSList :=  app.OBJ  buttons.OBJ  Led.OBJ  seven_seg.OBJ
+# environment
+GOOGLE_DEFAULT_CLIENT_SECRET = no
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LOCALAPPDATA = C:\Users\mosta\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile (from `makefile', line 4)
+SiLabsPath = C:\SiLabs
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\34951dc9c8d5912d5ac8cb1e6448c5c3-1.56.0-main-sock
+# environment
+HOMEPATH = \Users\mosta
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\mosta\AppData\Roaming
+# environment
+TEMP = C:\Users\mosta\AppData\Local\Temp
+# makefile (from `makefile', line 14)
+ld := C:\SiLabs/MCU/IDEfiles/C51/BIN/bl51.exe
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `makefile', line 13)
+OH := C:\SiLabs/MCU/IDEfiles/C51/BIN/oh51.exe
+# environment
+MKL_SERIAL = YES
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 9e0a
+# environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2019.1.3\bin;
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 2032
+# makefile (from `makefile', line 2)
+FILES := app buttons Led seven_seg
+# environment
+USERDOMAIN_ROAMINGPROFILE = MOSTAFAABBAS
+# variable set hash-table stats:
+# Load=108/1024=11%, Rehash=0, Collisions=11/137=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\flutter\bin (key C:/flutter/bin, mtime 1611833267): 8 files, no impossibilities.
+# D:\Programs\anaconda3 (key D:/Programs/anaconda3, mtime 1620648970): 86 files, no impossibilities.
+# C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\: could not be stat'd.
+# C:\Program Files\JetBrains\PyCharm 2019.1.3\bin: could not be stat'd.
+# C:\Program Files\MATLAB\R2016b\polyspace\bin (key C:/Program Files/MATLAB/R2016b/polyspace/bin, mtime 1576916215): 42 files, no impossibilities.
+# D:\Programs\cmake-3.20.2-windows-x86_64\cmake-3.20.2-windows-x86_64\bin (key D:/Programs/cmake-3.20.2-windows-x86_64/cmake-3.20.2-windows-x86_64/bin, mtime 1619706770): 7 files, no impossibilities.
+# C:\glut\lib (key C:/glut/lib, mtime 1617010299): 6 files, no impossibilities.
+# C:\Python27\Scripts: could not be stat'd.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1602756535): 30 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1619963253): 170 files, no impossibilities.
+# . (key d:/WORK/SBME/3rd Year/BioElectronics/tasks/MC_task2, mtime 1620859628): 23 files, no impossibilities.
+# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1620308088): 11 files, no impossibilities.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common: could not be stat'd.
+# D:\Programs\anaconda3\Library\bin (key D:/Programs/anaconda3/Library/bin, mtime 1620648954): 398 files, no impossibilities.
+# C:\Program Files\MATLAB\R2016b\bin (key C:/Program Files/MATLAB/R2016b/bin, mtime 1576916185): 20 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1620958303): 8 files, no impossibilities.
+# D:\Programs\anaconda3\Scripts (key D:/Programs/anaconda3/Scripts, mtime 1620648969): 101 files, no impossibilities.
+# C:\Program Files\Intel\Intel(R) Management Engine Components\IPT (key C:/Program Files/Intel/Intel(R) Management Engine Components/IPT, mtime 1562169880): 5 files, no impossibilities.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath: could not be stat'd.
+# C:\Program Files\Microsoft VS Code\bin (key C:/Program Files/Microsoft VS Code/bin, mtime 1620441635): 4 files, no impossibilities.
+# D:\Programs\flutter\bin: could not be stat'd.
+# C:\Program Files\Intel\Intel(R) Management Engine Components\DAL (key C:/Program Files/Intel/Intel(R) Management Engine Components/DAL, mtime 1562169880): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1616461524): 119 files, no impossibilities.
+# C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin (key C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin, mtime 1620741327): 58 files, no impossibilities.
+# C:\Users\mosta\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/mosta/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1618400879): 2 files, no impossibilities.
+# C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\ (key C:/Program Files/Intel/Intel(R) Management Engine Components/iCLS/, mtime 1562169891): 11 files, no impossibilities.
+# C:\Program Files\MATLAB\R2016b\runtime\win64 (key C:/Program Files/MATLAB/R2016b/runtime/win64, mtime 1576916148): 7 files, no impossibilities.
+# C:\Users\mosta\AppData\Local\Programs\Python\Python37-32\ (key C:/Users/mosta/AppData/Local/Programs/Python/Python37-32/, mtime 1620559840): 7 files, no impossibilities.
+# C:\Users\mosta\AppData\Local\Programs\Python\Python37-32\Scripts\ (key C:/Users/mosta/AppData/Local/Programs/Python/Python37-32/Scripts/, mtime 1620559814): 102 files, no impossibilities.
+# C:\Users\mosta\AppData\Roaming\npm (key C:/Users/mosta/AppData/Roaming/npm, mtime 1620308082): 2 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1606132256): 5 files, no impossibilities.
+# C:\Python39\ (key C:/Python39/, mtime 1620558430): 18 files, no impossibilities.
+# C:\adb (key C:/adb, mtime 1620554520): 8 files, no impossibilities.
+# C:\Program Files (x86)\dotnet\ (key C:/Program Files (x86)/dotnet/, mtime 1620958315): 8 files, no impossibilities.
+# C:\Python39\Scripts\ (key C:/Python39/Scripts/, mtime 1620558430): 5 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1621033802): 3161 files, no impossibilities.
+# C:\Python27: could not be stat'd.
+# C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT: could not be stat'd.
+# C:\Users\mosta\AppData\Local\GitHubDesktop\bin (key C:/Users/mosta/AppData/Local/GitHubDesktop/bin, mtime 1585779647): 4 files, no impossibilities.
+# C:\Users\mosta\AppData\Local\Microsoft\WindowsApps (key C:/Users/mosta/AppData/Local/Microsoft/WindowsApps, mtime 1618570034): 10 files, no impossibilities.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1620308125): 13 files, no impossibilities.
+# C:\Program Files (x86)\Intel\Platform Flash Tool Lite (key C:/Program Files (x86)/Intel/Platform Flash Tool Lite, mtime 1564013251): 3 files, no impossibilities.
+# C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL: could not be stat'd.
+# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1620740997): 5 files, no impossibilities.
+
+# 4471 files, no impossibilities in 45 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+link:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 21):
+	$(foreach var,$(SRCS), $(CC) $(var) DB OE BR;)
+	$(ld) $(OBJS) TO $(mainFile).ABS
+	
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-13 00:19:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+default: link
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 17):
+	$(OH) $(mainFile).ABS
+	make clean
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 25):
+	del *.OBJ *.LST *.M51 *.ABS
+	
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/19=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat May 15 19:10:05 2021
+
+ 
+make.exe: *** No rule to make target `all'.  Stop.
+ 

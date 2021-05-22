@@ -1,0 +1,21 @@
+
+BL51 BANKED LINKER/LOCATER V6.05 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2007
+"H:\MC_task2\app.obj",
+"H:\MC_task2\buttons.obj",
+"H:\MC_task2\Led.obj",
+"H:\MC_task2\seven_seg.obj"  TO "H:\MC_task2\aa"  RS(256) PL(68) PW(78)   
+
+*** WARNING L13: RECURSIVE CALL TO SEGMENT
+    SEGMENT: ?PR?ELEVATORUP?APP
+    CALLER:  ?PR?ELEVATORDOWN?APP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 04A9H BYTE (58%) *
+******************************************************************************
+
+>> 
+>> 
+>> 
+Program Size: data=46.0 xdata=0 code=1337
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
