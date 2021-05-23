@@ -165,6 +165,8 @@ for (i ; i <= 4; i++)
         up_sum = up_sum + up[i];
         down_sum = down_sum + down[i];
     }        
+
+    
 }
 
 void Timer0_ISR(void) interrupt 1	
